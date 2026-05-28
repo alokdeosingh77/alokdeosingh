@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
   <title>Alok Deo Singh | Senior Program & Transformation Leader</title>
   <meta name="description" content="Senior Program & Transformation Leader with 20+ years delivering large-scale technology and AI programs across SaaS, Manufacturing, Automotive, and Data Platforms." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -370,5 +371,801 @@
   </footer>
 
   <script src="js/main.js"></script>
+=======
+  <title>Alok Deo Singh — Senior Program Manager</title>
+  <meta name="description" content="Senior Program & Transformation Leader with 20+ years delivering large-scale technology and product initiatives across SaaS, AI, and enterprise platforms." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0f1f3d;
+      --navy-mid: #1a2e50;
+      --gold: #c9a84c;
+      --gold-light: #e8c97a;
+      --cream: #f5f0e8;
+      --cream-dark: #ede6d6;
+      --text: #1a1a2e;
+      --text-muted: #5a6070;
+      --white: #ffffff;
+      --border: rgba(201,168,76,0.25);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1.25rem 4rem;
+      background: rgba(15,31,61,0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem; font-weight: 500;
+      color: var(--gold); letter-spacing: 0.05em;
+      text-decoration: none;
+    }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      color: rgba(255,255,255,0.7); text-decoration: none;
+      font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      background: var(--navy);
+      display: grid; grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 8rem 4rem 4rem;
+      position: relative; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 60% 70% at 80% 50%, rgba(201,168,76,0.07) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 10% 80%, rgba(201,168,76,0.04) 0%, transparent 60%);
+    }
+    .hero-grid-lines {
+      position: absolute; inset: 0; opacity: 0.04;
+      background-image: linear-gradient(var(--gold) 1px, transparent 1px),
+        linear-gradient(90deg, var(--gold) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .hero-content { position: relative; z-index: 1; }
+    .hero-tag {
+      display: inline-block;
+      font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--gold); border: 1px solid var(--border);
+      padding: 0.4rem 1rem; margin-bottom: 1.75rem;
+      opacity: 0; animation: fadeUp 0.7s 0.2s forwards;
+    }
+    .hero-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3.2rem, 6vw, 5.5rem);
+      font-weight: 300; line-height: 1.05;
+      color: var(--white); margin-bottom: 1.5rem;
+      opacity: 0; animation: fadeUp 0.7s 0.4s forwards;
+    }
+    .hero-name span { color: var(--gold); display: block; }
+    .hero-desc {
+      font-size: 1rem; line-height: 1.75;
+      color: rgba(255,255,255,0.6); max-width: 480px;
+      margin-bottom: 2.5rem;
+      opacity: 0; animation: fadeUp 0.7s 0.6s forwards;
+    }
+    .hero-ctas {
+      display: flex; gap: 1rem; flex-wrap: wrap;
+      opacity: 0; animation: fadeUp 0.7s 0.8s forwards;
+    }
+    .btn-primary {
+      background: var(--gold); color: var(--navy);
+      padding: 0.8rem 2rem; font-size: 0.82rem;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      text-decoration: none; font-weight: 500;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,0.3); color: rgba(255,255,255,0.8);
+      padding: 0.8rem 2rem; font-size: 0.82rem;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s, transform 0.2s;
+    }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+
+    .hero-stats {
+      position: relative; z-index: 1;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 1.5rem; padding-left: 4rem;
+      opacity: 0; animation: fadeUp 0.7s 1s forwards;
+    }
+    .stat-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      padding: 1.75rem;
+    }
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem; font-weight: 300;
+      color: var(--gold); line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+    .stat-label {
+      font-size: 0.78rem; color: rgba(255,255,255,0.5);
+      letter-spacing: 0.05em; line-height: 1.4;
+    }
+
+    /* ── SECTIONS ── */
+    section { padding: 6rem 4rem; }
+    .section-label {
+      font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 400; color: var(--navy);
+      line-height: 1.15; margin-bottom: 3rem;
+    }
+    .section-title em { font-style: italic; color: var(--gold); }
+
+    /* ── ABOUT ── */
+    #about { background: var(--white); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 5rem; align-items: start; }
+    .about-left { position: sticky; top: 6rem; }
+    .about-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem; font-weight: 400; line-height: 1.5;
+      color: var(--navy-mid); margin-bottom: 2rem;
+      border-left: 3px solid var(--gold); padding-left: 1.5rem;
+    }
+    .about-text { font-size: 0.95rem; line-height: 1.9; color: var(--text-muted); margin-bottom: 1.25rem; }
+    .skills-grid { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 2rem; }
+    .skill-tag {
+      font-size: 0.75rem; letter-spacing: 0.05em;
+      border: 1px solid var(--border);
+      padding: 0.4rem 0.9rem; color: var(--navy);
+      background: var(--cream);
+    }
+
+    /* ── EXPERIENCE ── */
+    #experience { background: var(--cream); }
+    .exp-list { display: flex; flex-direction: column; gap: 0; }
+    .exp-item {
+      display: grid; grid-template-columns: 200px 1fr;
+      gap: 3rem; padding: 2.5rem 0;
+      border-top: 1px solid var(--border);
+      transition: background 0.2s;
+    }
+    .exp-item:last-child { border-bottom: 1px solid var(--border); }
+    .exp-date { font-size: 0.8rem; color: var(--text-muted); padding-top: 0.2rem; letter-spacing: 0.03em; }
+    .exp-company {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem; color: var(--navy); font-weight: 500;
+      margin-bottom: 0.2rem;
+    }
+    .exp-role {
+      font-size: 0.8rem; color: var(--gold);
+      letter-spacing: 0.08em; text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+    .exp-bullets li {
+      font-size: 0.88rem; color: var(--text-muted); line-height: 1.65;
+      padding-left: 1rem; position: relative;
+    }
+    .exp-bullets li::before {
+      content: '—'; position: absolute; left: 0;
+      color: var(--gold); font-size: 0.75rem;
+    }
+
+    /* ── CERTIFICATIONS ── */
+    #certifications { background: var(--navy); }
+    #certifications .section-title { color: var(--white); }
+    .cert-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.5rem; }
+    .cert-card {
+      border: 1px solid var(--border);
+      padding: 1.75rem;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .cert-card:hover { background: rgba(201,168,76,0.06); transform: translateY(-4px); }
+    .cert-icon { font-size: 1.5rem; margin-bottom: 1rem; }
+    .cert-name { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--white); margin-bottom: 0.4rem; }
+    .cert-issuer { font-size: 0.75rem; color: var(--gold); letter-spacing: 0.05em; }
+
+    /* ── EDUCATION ── */
+    #education { background: var(--cream-dark); }
+    .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .edu-card {
+      background: var(--white);
+      border-left: 3px solid var(--gold);
+      padding: 2rem 2.5rem;
+    }
+    .edu-degree { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--navy); margin-bottom: 0.4rem; }
+    .edu-school { font-size: 0.85rem; font-weight: 500; color: var(--text-muted); margin-bottom: 0.3rem; }
+    .edu-year { font-size: 0.78rem; color: var(--gold); letter-spacing: 0.06em; }
+
+    /* ── CONTACT ── */
+    #contact {
+      background: var(--navy-mid);
+      text-align: center;
+    }
+    #contact .section-title { color: var(--white); }
+    .contact-sub { font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-bottom: 3rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+    .contact-links { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+    .contact-link {
+      display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+      color: rgba(255,255,255,0.6); text-decoration: none;
+      font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .contact-link .ci { font-size: 1.5rem; }
+    .contact-link:hover { color: var(--gold); }
+
+    /* ── BLOG ── */
+    #blog { background: var(--white); }
+    .blog-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem; flex-wrap: wrap; gap: 1rem; }
+    .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem; }
+    .blog-card {
+      border: 1px solid var(--border); background: var(--cream);
+      cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
+      display: flex; flex-direction: column;
+    }
+    .blog-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(15,31,61,0.1); }
+    .blog-card-img {
+      width: 100%; height: 180px; object-fit: cover;
+      background: var(--navy); display: flex; align-items: center; justify-content: center;
+      font-size: 3rem;
+    }
+    .blog-card-body { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
+    .blog-meta { display: flex; gap: 0.75rem; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; }
+    .blog-tag {
+      font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase;
+      background: var(--navy); color: var(--gold); padding: 0.25rem 0.6rem;
+    }
+    .blog-date { font-size: 0.75rem; color: var(--text-muted); }
+    .blog-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; color: var(--navy); margin-bottom: 0.6rem; line-height: 1.3; }
+    .blog-excerpt { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; flex: 1; }
+    .blog-read { margin-top: 1.25rem; font-size: 0.78rem; color: var(--gold); letter-spacing: 0.06em; text-transform: uppercase; }
+
+    /* Blog modal */
+    .blog-modal-overlay {
+      display: none; position: fixed; inset: 0; z-index: 200;
+      background: rgba(15,31,61,0.85); backdrop-filter: blur(6px);
+      align-items: center; justify-content: center; padding: 2rem;
+    }
+    .blog-modal-overlay.open { display: flex; }
+    .blog-modal {
+      background: var(--white); max-width: 720px; width: 100%;
+      max-height: 85vh; overflow-y: auto;
+      padding: 3rem; position: relative;
+    }
+    .modal-close {
+      position: absolute; top: 1.25rem; right: 1.25rem;
+      background: none; border: none; font-size: 1.5rem;
+      cursor: pointer; color: var(--text-muted);
+      transition: color 0.2s;
+    }
+    .modal-close:hover { color: var(--navy); }
+    .modal-tag { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
+    .modal-title { font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--navy); margin-bottom: 0.5rem; line-height: 1.2; }
+    .modal-date { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+    .modal-body { font-size: 0.95rem; line-height: 1.9; color: var(--text-muted); white-space: pre-wrap; }
+
+    /* Admin panel */
+    .admin-toggle {
+      background: none; border: 1px solid var(--border);
+      color: var(--text-muted); font-size: 0.78rem;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 0.5rem 1.25rem; cursor: pointer;
+      transition: all 0.2s; font-family: 'DM Sans', sans-serif;
+    }
+    .admin-toggle:hover { border-color: var(--gold); color: var(--gold); }
+    .admin-panel {
+      display: none; background: var(--cream-dark);
+      border: 1px solid var(--border); padding: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    .admin-panel.open { display: block; }
+    .admin-panel h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--navy); margin-bottom: 1.5rem; }
+    .admin-field { margin-bottom: 1rem; }
+    .admin-field label { display: block; font-size: 0.75rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.4rem; }
+    .admin-field input, .admin-field textarea, .admin-field select {
+      width: 100%; padding: 0.65rem 0.9rem;
+      border: 1px solid var(--border); background: var(--white);
+      font-family: 'DM Sans', sans-serif; font-size: 0.9rem;
+      color: var(--text); outline: none;
+      transition: border-color 0.2s;
+    }
+    .admin-field input:focus, .admin-field textarea:focus { border-color: var(--gold); }
+    .admin-field textarea { min-height: 180px; resize: vertical; }
+    .admin-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .btn-publish {
+      background: var(--navy); color: var(--gold);
+      border: none; padding: 0.75rem 2rem;
+      font-size: 0.82rem; letter-spacing: 0.07em; text-transform: uppercase;
+      cursor: pointer; font-family: 'DM Sans', sans-serif;
+      transition: background 0.2s;
+    }
+    .btn-publish:hover { background: var(--navy-mid); }
+    .btn-delete {
+      background: none; border: 1px solid #e05a5a; color: #e05a5a;
+      font-size: 0.7rem; padding: 0.2rem 0.6rem; cursor: pointer;
+      letter-spacing: 0.05em; font-family: 'DM Sans', sans-serif;
+      transition: all 0.2s; margin-top: 0.75rem; display: inline-block;
+    }
+    .btn-delete:hover { background: #e05a5a; color: white; }
+    .empty-state { text-align: center; padding: 4rem 2rem; color: var(--text-muted); grid-column: 1/-1; }
+    .empty-state p { font-size: 1rem; margin-top: 0.5rem; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      text-align: center; padding: 2rem;
+      font-size: 0.78rem; color: rgba(255,255,255,0.3);
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      nav { padding: 1rem 1.5rem; }
+      .nav-links { display: none; }
+      #hero { grid-template-columns: 1fr; padding: 6rem 1.5rem 3rem; }
+      .hero-stats { padding-left: 0; margin-top: 3rem; }
+      section { padding: 4rem 1.5rem; }
+      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .about-left { position: static; }
+      .exp-item { grid-template-columns: 1fr; gap: 0.5rem; }
+      .edu-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">Alok Deo Singh</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Senior Program Manager · Noida, India</div>
+    <h1 class="hero-name">Alok Deo<span>Singh</span></h1>
+    <p class="hero-desc">Senior Program & Transformation Leader with 20+ years delivering large-scale technology and product initiatives across SaaS, AI/ML, and enterprise platforms.</p>
+    <div class="hero-ctas">
+      <a href="mailto:alokdeosingh@gmail.com" class="btn-primary">Get in Touch</a>
+      <a href="#experience" class="btn-outline">View Experience</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-card">
+      <div class="stat-num">20+</div>
+      <div class="stat-label">Years of industry experience</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">$2M</div>
+      <div class="stat-label">Combined annual program budget managed</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">50%</div>
+      <div class="stat-label">Legacy-to-microservices migration delivered</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">5+</div>
+      <div class="stat-label">Industries: SaaS, Auto, Telecom, Insurance, Mfg</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-left">
+      <div class="section-label">About</div>
+      <h2 class="section-title">Strategy into <em>measurable outcomes</em></h2>
+      <blockquote class="about-tagline">"Adept at navigating ambiguity, scaling platforms, and leading programs from concept through market release."</blockquote>
+      <div class="skills-grid">
+        <span class="skill-tag">Program & Portfolio Management</span>
+        <span class="skill-tag">Digital & AI Transformation</span>
+        <span class="skill-tag">Microservices & Platform Modernization</span>
+        <span class="skill-tag">SaaS & Enterprise Product Delivery</span>
+        <span class="skill-tag">Executive Stakeholder Management</span>
+        <span class="skill-tag">Global & Offshore Team Leadership</span>
+        <span class="skill-tag">Risk & KPI Governance</span>
+        <span class="skill-tag">DevOps & Cloud-Native</span>
+        <span class="skill-tag">Data Platforms & ML Enablement</span>
+      </div>
+    </div>
+    <div>
+      <p class="about-text">I'm a Senior Program & Transformation Leader who thrives on turning complex, high-stakes technology initiatives into predictable, measurable outcomes. My career spans over two decades across SaaS, Manufacturing, Automotive, Telecom, Insurance, and Data Platforms — always at the intersection of strategy and execution.</p>
+      <p class="about-text">At Brightly (a Siemens company), I lead a multi-year modernization program migrating a large-scale legacy monolith to a microservices-based SaaS platform, while simultaneously driving enterprise AI readiness across asset management products.</p>
+      <p class="about-text">I'm recognized for building high-performing global teams, establishing robust KPI and risk frameworks, and partnering closely with executive stakeholders to ensure delivery stays aligned with strategic intent — no matter how complex the landscape.</p>
+      <p class="about-text">I hold a Chief Digital & AI Officer certification from ISB Hyderabad (2026), complementing my PMP, SAFe 5, AWS AI Practitioner, and data science credentials.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-label">Career</div>
+  <h2 class="section-title">Work <em>Experience</em></h2>
+  <div class="exp-list">
+
+    <div class="exp-item">
+      <div class="exp-date">Aug 2022 — Present<br>Noida, India</div>
+      <div>
+        <div class="exp-company">Brightly, a Siemens Company</div>
+        <div class="exp-role">Senior Program Manager</div>
+        <ul class="exp-bullets">
+          <li>Leading a multi-year product modernization program migrating a large-scale legacy monolith to a microservices-based SaaS platform; 50%+ migration delivered to date.</li>
+          <li>Managing two concurrent transformation programs with a combined annual budget of ~USD 2M, ensuring delivery predictability, cost control, and executive visibility.</li>
+          <li>Driving enterprise AI platform readiness and delivering AI-enabled capabilities into asset management SaaS products to unlock cost savings and operational predictability.</li>
+          <li>Established program KPIs, milestone governance, and risk frameworks — improving execution transparency and early issue detection.</li>
+          <li>Providing regular executive-level reporting and steering committee updates to support data-driven decision-making.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-date">Aug 2016 — Oct 2022<br>Gurgaon, India</div>
+      <div>
+        <div class="exp-company">Harman India</div>
+        <div class="exp-role">Senior Program Manager</div>
+        <ul class="exp-bullets">
+          <li>Led large-scale data platform migration from Oracle & Netezza to Apache Spark, achieving a 50% reduction in job execution time.</li>
+          <li>Delivered a personalized recommendation engine for smartphone users using behavioural analytics and data science.</li>
+          <li>Directed implementation of an IoT device security solution for a global shipping company, enabling secure device identity issuance and revocation.</li>
+          <li>Executed a Self-Organizing Network (SON) Proof of Concept for a major U.S. telecom client.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-date">Sep 2015 — Aug 2016<br>Noida, India</div>
+      <div>
+        <div class="exp-company">Food Circle</div>
+        <div class="exp-role">Co-Founder</div>
+        <ul class="exp-bullets">
+          <li>Founded a home food delivery business, scaling to 1,200 customers and achieving a 4.5 rating on the Google Play Store.</li>
+          <li>Played a hands-on role in developing the Android app for home chefs and customers.</li>
+          <li>Negotiated contracts with key partners and drove revenue growth through marketing and customer engagement strategies.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-date">Sep 2014 — Sep 2015<br>Tunbridge Wells, UK</div>
+      <div>
+        <div class="exp-company">Tata Consultancy Services</div>
+        <div class="exp-role">Technical Project Manager</div>
+        <ul class="exp-bullets">
+          <li>Delivered an automation solution for customer communication management, achieving $100K YoY savings for an insurance client.</li>
+          <li>Designed a comprehensive solution architecture aligned with client business objectives for customer communication management.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-date">Oct 2011 — Jun 2014<br>Noida, India</div>
+      <div>
+        <div class="exp-company">Tata Consultancy Services</div>
+        <div class="exp-role">Project Manager</div>
+        <ul class="exp-bullets">
+          <li>Led a team of 50+ associates across onsite and offshore teams, delivering $100K+ in value for an insurance client.</li>
+          <li>Developed detailed release plans covering scope, objectives, deliverables, resources, and timelines.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-date">Oct 2009 — Sep 2011<br>Noida & Hong Kong</div>
+      <div>
+        <div class="exp-company">Tata Consultancy Services</div>
+        <div class="exp-role">Project Lead</div>
+        <ul class="exp-bullets">
+          <li>Led the Regional Target Operation Model (RTOM) initiative, migrating products from Malaysia to a regional hub in Hong Kong.</li>
+          <li>Managed a team of 15 developers, delivering nearly 100 man-months of value over six months.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-label">Credentials</div>
+  <h2 class="section-title" style="color:var(--white);">Certifications & <em>Achievements</em></h2>
+  <div class="cert-grid">
+    <div class="cert-card">
+      <div class="cert-icon">🏅</div>
+      <div class="cert-name">PMP</div>
+      <div class="cert-issuer">Project Management Institute</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">⚡</div>
+      <div class="cert-name">SAFe 5 Agilist</div>
+      <div class="cert-issuer">Scaled Agile Framework</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">🤖</div>
+      <div class="cert-name">AWS AI Practitioner</div>
+      <div class="cert-issuer">Amazon Web Services</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">📊</div>
+      <div class="cert-name">Machine Learning</div>
+      <div class="cert-issuer">Coursera</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">🔬</div>
+      <div class="cert-name">Data Science Nanodegree</div>
+      <div class="cert-issuer">Udacity</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">🎓</div>
+      <div class="cert-name">Chief Digital & AI Officer</div>
+      <div class="cert-issuer">ISB Hyderabad · 2026</div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-label">Education</div>
+  <h2 class="section-title">Academic <em>Background</em></h2>
+  <div class="edu-grid">
+    <div class="edu-card">
+      <div class="edu-degree">Chief Digital & AI Officer (CDAIO)</div>
+      <div class="edu-school">Indian School of Business (ISB), Hyderabad</div>
+      <div class="edu-year">February 2026</div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-degree">Master of Computer Applications</div>
+      <div class="edu-school">Cochin University of Science and Technology (CUSAT), Kochi</div>
+      <div class="edu-year">September 2002</div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <div class="blog-header">
+    <div>
+      <div class="section-label">Insights</div>
+      <h2 class="section-title" style="margin-bottom:0">Thoughts & <em>Articles</em></h2>
+    </div>
+    <button class="admin-toggle" onclick="toggleAdmin()">✏ Write a Post</button>
+  </div>
+
+  <!-- Admin panel -->
+  <div class="admin-panel" id="adminPanel">
+    <h3>New Blog Post</h3>
+    <div class="admin-row">
+      <div class="admin-field">
+        <label>Title *</label>
+        <input type="text" id="postTitle" placeholder="e.g. Why KPI governance matters" />
+      </div>
+      <div class="admin-field">
+        <label>Category</label>
+        <select id="postCategory">
+          <option>Program Management</option>
+          <option>AI & Digital</option>
+          <option>Leadership</option>
+          <option>SaaS & Product</option>
+          <option>Career</option>
+          <option>Reflection</option>
+        </select>
+      </div>
+    </div>
+    <div class="admin-field">
+      <label>Excerpt (1–2 sentences shown on card)</label>
+      <input type="text" id="postExcerpt" placeholder="Short preview of your post..." />
+    </div>
+    <div class="admin-field">
+      <label>Full Content *</label>
+      <textarea id="postContent" placeholder="Write your full post here..."></textarea>
+    </div>
+    <div class="admin-field">
+      <label>Emoji / Icon (shown on card)</label>
+      <input type="text" id="postEmoji" placeholder="e.g. 🚀" style="width:80px" />
+    </div>
+    <button class="btn-publish" onclick="publishPost()">Publish Post</button>
+  </div>
+
+  <!-- Blog grid -->
+  <div class="blog-grid" id="blogGrid">
+    <div class="empty-state" id="emptyState">
+      <div style="font-size:2.5rem">✍️</div>
+      <p>No posts yet. Hit <strong>Write a Post</strong> to publish your first article.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Blog Modal -->
+<div class="blog-modal-overlay" id="blogModal" onclick="closeModal(event)">
+  <div class="blog-modal">
+    <button class="modal-close" onclick="closeBlogModal()">✕</button>
+    <div class="modal-tag" id="modalTag"></div>
+    <h2 class="modal-title" id="modalTitle"></h2>
+    <div class="modal-date" id="modalDate"></div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+
+<section id="contact">
+  <div class="section-label">Get in Touch</div>
+  <h2 class="section-title">Let's <em>Connect</em></h2>
+  <p class="contact-sub">Open to leadership opportunities, advisory roles, and conversations about enterprise transformation and AI-enabled product delivery.</p>
+  <div class="contact-links">
+    <a href="mailto:alokdeosingh@gmail.com" class="contact-link">
+      <span class="ci">✉</span>
+      <span>alokdeosingh@gmail.com</span>
+    </a>
+    <a href="tel:+919711269329" class="contact-link">
+      <span class="ci">📞</span>
+      <span>+91 97112 69329</span>
+    </a>
+    <a href="https://linkedin.com/in/alokdeosingh" target="_blank" class="contact-link">
+      <span class="ci">🔗</span>
+      <span>LinkedIn</span>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Alok Deo Singh · Senior Program & Transformation Leader</p>
+</footer>
+
+<script>
+  // ── STORAGE KEY ──
+  const STORAGE_KEY = 'alok_blog_posts';
+
+  // ── LOAD POSTS ──
+  function loadPosts() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      return raw ? JSON.parse(raw) : [];
+    } catch { return []; }
+  }
+
+  function savePosts(posts) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(posts));
+  }
+
+  // ── RENDER ──
+  function renderPosts() {
+    const posts = loadPosts();
+    const grid = document.getElementById('blogGrid');
+    const empty = document.getElementById('emptyState');
+    // Remove old cards (keep empty state)
+    grid.querySelectorAll('.blog-card').forEach(c => c.remove());
+
+    if (posts.length === 0) {
+      empty.style.display = 'block';
+      return;
+    }
+    empty.style.display = 'none';
+
+    [...posts].reverse().forEach((post, idx) => {
+      const realIdx = posts.length - 1 - idx;
+      const card = document.createElement('div');
+      card.className = 'blog-card';
+      card.innerHTML = `
+        <div class="blog-card-img">${post.emoji || '📝'}</div>
+        <div class="blog-card-body">
+          <div class="blog-meta">
+            <span class="blog-tag">${post.category}</span>
+            <span class="blog-date">${post.date}</span>
+          </div>
+          <div class="blog-title">${post.title}</div>
+          <div class="blog-excerpt">${post.excerpt || post.content.slice(0, 120) + '...'}</div>
+          <div class="blog-read">Read more →</div>
+          <button class="btn-delete" onclick="deletePost(event, ${realIdx})">🗑 Delete</button>
+        </div>
+      `;
+      card.querySelector('.blog-read').addEventListener('click', () => openPost(realIdx));
+      card.querySelector('.blog-title').addEventListener('click', () => openPost(realIdx));
+      grid.appendChild(card);
+    });
+  }
+
+  // ── OPEN POST ──
+  function openPost(idx) {
+    const posts = loadPosts();
+    const post = posts[idx];
+    document.getElementById('modalTag').textContent = post.category;
+    document.getElementById('modalTitle').textContent = post.title;
+    document.getElementById('modalDate').textContent = post.date;
+    document.getElementById('modalBody').textContent = post.content;
+    document.getElementById('blogModal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal(e) {
+    if (e.target === document.getElementById('blogModal')) closeBlogModal();
+  }
+  function closeBlogModal() {
+    document.getElementById('blogModal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // ── PUBLISH ──
+  function publishPost() {
+    const title = document.getElementById('postTitle').value.trim();
+    const content = document.getElementById('postContent').value.trim();
+    if (!title || !content) { alert('Title and content are required.'); return; }
+
+    const posts = loadPosts();
+    posts.push({
+      title,
+      category: document.getElementById('postCategory').value,
+      excerpt: document.getElementById('postExcerpt').value.trim(),
+      content,
+      emoji: document.getElementById('postEmoji').value.trim() || '📝',
+      date: new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })
+    });
+    savePosts(posts);
+    // Clear form
+    ['postTitle','postExcerpt','postContent','postEmoji'].forEach(id => document.getElementById(id).value = '');
+    document.getElementById('adminPanel').classList.remove('open');
+    renderPosts();
+  }
+
+  // ── DELETE ──
+  function deletePost(e, idx) {
+    e.stopPropagation();
+    if (!confirm('Delete this post?')) return;
+    const posts = loadPosts();
+    posts.splice(idx, 1);
+    savePosts(posts);
+    renderPosts();
+  }
+
+  // ── TOGGLE ADMIN ──
+  function toggleAdmin() {
+    document.getElementById('adminPanel').classList.toggle('open');
+  }
+
+  // ── INIT ──
+  renderPosts();
+</script>
+>>>>>>> 5bff9c7f5cf5ff7f00e3ac0fb80daf067c72fe6d
 </body>
 </html>
